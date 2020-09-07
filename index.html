@@ -74,6 +74,16 @@ window.addEventListener('keydown', function(e){
   const keys = document.querySelectorAll('.key');
   keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 
+  let audio = document.querySelectorAll('audio')
+    let buttons = document.querySelectorAll('.key') 
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].onclick = function (e) {   
+        buttons[i].classList.add('playing');
+        audio[i].currentTime = 0;
+        audio[i].play();
+      };
+
+    }
 </script>
 
 
