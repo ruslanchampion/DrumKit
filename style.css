@@ -56,5 +56,9 @@ kbd {
 @media screen and (max-width: 992px) {
     .keys {
       flex-wrap: wrap;
+      min-height: 150vh;
+    }
+  .keys {
+      width: 20rem;
     }
   }
