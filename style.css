@@ -54,9 +54,6 @@ kbd {
   color: #ffc600;
 }
 @media screen and (max-width: 992px) {
-    body {
-      background-color: blue;
-    }
     .keys {
       flex-direction: column;
     }
