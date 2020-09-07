@@ -13,10 +13,10 @@ body,html {
 
 .keys {
   display: flex;
-  flex: 1;
+  flex-grow: 1;
   min-height: 100vh;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row
   
@@ -27,13 +27,35 @@ body,html {
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
-  padding: 1rem .5rem;
+  padding: 2rem .5rem;
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
   text-shadow: 0 0 .5rem black;
+  flex-grow: 1;
+  min-height: 20vh;
+  vertical-align: center;
+  position: relative;
+}
+.sound {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -5% 0 0 -25%;
+  
+}
+kbd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -5% 0 0 -25%;
+  
 }
 
 .playing {
@@ -45,6 +67,7 @@ body,html {
 kbd {
   display: block;
   font-size: 4rem;
+  text-align: center;
 }
 
 .sound {
@@ -53,12 +76,3 @@ kbd {
   letter-spacing: .1rem;
   color: #ffc600;
 }
-@media screen and (max-width: 992px) {
-    .keys {
-      flex-wrap: wrap;
-      min-height: 150vh;
-    }
-  .keys {
-      width: 20rem;
-    }
-  }
